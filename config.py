@@ -8,8 +8,8 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 #force user to join your backup channel leave 0 if you don't need.
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "1002166040769"))
-FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "1002164083331"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "0"))
 
 if FORCE_SUB_CHANNEL > FORCE_SUB_CHANNEL2:
     temp = FORCE_SUB_CHANNEL2 
@@ -22,17 +22,17 @@ BOT_STATS_TEXT = os.environ.get("BOTS_STATS_TEXT","<b>BOT UPTIME</b>\n{uptime}")
 USER_REPLY_TEXT = os.environ.get("USER_REPLY_TEXT", "❌Don't send me messages directly I'm only File Share bot!")
 
 #your bot token here from https://telegram.me/BotFather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6877752240:AAFJwfGP9RA6qk1hbOu-gjljVqLam6_OCSg") 
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7195571955:AAFptbUJrsq8kSnc0ZUNRSf7TTZsDlWlVCY") 
 #your api id from https://my.telegram.org/apps
 APP_ID = int(os.environ.get("APP_ID", "28723622"))
 #your api hash from https://my.telegram.org/apps
 API_HASH = os.environ.get("API_HASH", "1a997c00c1209441a20c0b0f13fdfa54")
 #your channel_id from https://t.me/MissRose_bot by forwarding dummy message to rose and applying command `/id` in reply to that message
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "1002198614945"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "1002164083331"))
 #your database channel link
-CHANNEL_LINK = os.environ.get("CHANNEL_LINK", "https://t.me/+E3m5025Q3bljMWZl")
+CHANNEL_LINK = os.environ.get("CHANNEL_LINK", "https://t.me/+y0EZpZwTMigzODI9")
 #your id of telegram can be found by https://t.me/MissRose_bot with '/id' command
-OWNER_ID = int(os.environ.get("OWNER_ID", "1466271043"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "6095960355"))
 #port set to default 8080
 PORT = os.environ.get("PORT", "8080")
 #your database url mongodb only You can use mongo atlas free cloud database
@@ -45,7 +45,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 #your start default command message.
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link. 💾")
 #your telegram tag without @
-OWNER_TAG = os.environ.get("OWNER_TAG", "Heavenwala3")
+OWNER_TAG = os.environ.get("OWNER_TAG", "Heavenownerr")
 #Time in seconds for message delete
 TIME = int(os.environ.get("TIME", "60"))
 
