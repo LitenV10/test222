@@ -83,9 +83,9 @@ SCREENSHOT_URL = os.environ.get("SCREENSHOT_URL", "http://t.me/Screenshotsverify
 admin id @heavenwaala1")
 
 #Time and its price
-Lifetime 
+#Lifetime 
 PRICE1 = os.environ.get("Mom son Indian and foreign", "199 rs")
-Lifetime 
+#Lifetime 
 PRICE2 = os.environ.get("Brother sister real indian and foreign", "199 rs")
 #Lifetime
 PRICE3 = os.environ.get("Blackmail snapgod dirty 😝", "199 rs")
