@@ -122,13 +122,16 @@ async def start_command(client: Client, message: Message):
                     except:
                         continue
             reply_markup = InlineKeyboardMarkup(
+            reply_markup = InlineKeyboardMarkup(
+            [ [
+                    InlineKeyboardButton( "ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ", url = "https://t.me/+3meWpN3XEjc3MTI1" ),
+                    InlineKeyboardButton("sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", url = "https://t.me/+nrNgQ7sT3XQxZTc1")
+                ], [ InlineKeyboardButton("ᴡᴀᴛᴄʜ 𝟷𝟾+ sʜᴏʀᴛs ᴠɪᴅᴇᴏs", url = "http://t.me/UnseenRobot/shorts") ],
                 [
-                    [
-                        InlineKeyboardButton("😊 About Me", callback_data="about"),
-                        InlineKeyboardButton("🔒 Close", callback_data="close")
-                    ]
+                    InlineKeyboardButton("🤖 ᴀʙᴏᴜᴛ ᴍᴇ", callback_data = "about"),
+                    InlineKeyboardButton("🔒 ᴄʟᴏsᴇ", callback_data = "close")
                 ]
-            )
+            ]
             await message.reply_text(
                 text=START_MSG.format(
                     first=message.from_user.first_name,
